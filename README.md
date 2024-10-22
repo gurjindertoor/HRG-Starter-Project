@@ -35,7 +35,7 @@ For Phase 1, this repository contains the files and instructions you'll need to 
 - 2 x Wheels
 - 2 x Caster wheels
 
-*(Note: These have not been sliced yet, you will have to slice them yourselves in your slicing program of choice.)*
+*(Note: These parts have not been sliced yet. You will need to slice them yourself using your preferred slicing program.)*
 
 ### Electronic Components:
 - 1 x Arduino Uno
@@ -169,6 +169,34 @@ void loop() {
   delay(1000); // Wait for 1 second
 }
 ```
+
+#### Pulse Width Modulation (PWM)
+
+Pulse Width Modulation (PWM) is a technique used to simulate analog output by rapidly switching a pin between HIGH and LOW states. This is useful for controlling devices like motors or LEDs, allowing you to change their speed or brightness.
+
+Arduino has several pins that support PWM, marked with a ~ symbol (e.g., pins 3, 5, 6, 9, 10, and 11 on an Arduino Uno). You can use the analogWrite() function to control the duty cycle of the PWM signal.
+
+Example:
+
+```cpp
+int pwmPin = 9; // PWM-capable pin
+
+void setup() {
+  pinMode(pwmPin, OUTPUT); // Set the PWM pin as an output
+}
+
+void loop() {
+  analogWrite(pwmPin, 128); // Set the pin to 50% duty cycle (half brightness or speed)
+  delay(1000);              // Wait for 1 second
+  analogWrite(pwmPin, 255); // Set the pin to full duty cycle (full brightness or speed)
+  delay(1000);              // Wait for 1 second
+}
+```
+
+In this example:
+
+- analogWrite(pin, value): Sends a PWM signal to the specified pin. The value can range from 0 (always off) to 255 (always on), with intermediate values representing varying duty cycles.
+- This can control the brightness of an LED or the speed of a motor.
 
 ---
 
