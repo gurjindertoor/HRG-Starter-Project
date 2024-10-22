@@ -170,6 +170,8 @@ void loop() {
 }
 ```
 
+---
+
 #### Pulse Width Modulation (PWM)
 
 Pulse Width Modulation (PWM) is a technique used to simulate analog output by rapidly switching a pin between HIGH and LOW states. This is useful for controlling devices like motors or LEDs, allowing you to change their speed or brightness.
