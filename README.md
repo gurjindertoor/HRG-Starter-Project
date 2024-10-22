@@ -4,6 +4,33 @@ Welcome to the Houston Robotics Group’s starter project! This repository is de
 
 Many of the parts used in this project are compiled from [Open Robotic Platform](https://openroboticplatform.com/), with a few custom additions and modifications of my own.
 
+---
+
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [What You Will Learn](#what-you-will-learn)
+3. [Phase 1: Components and Assembly Guide](#phase-1-components-and-assembly-guide)
+   - [Laser-Cut Components](#laser-cut-components)
+   - [3D Printed Components](#3d-printed-components)
+   - [Electronic Components](#electronic-components)
+   - [Miscellaneous](#miscellaneous)
+   - [Assembly Instructions](#assembly-instructions)
+4. [Next Steps](#next-steps)
+5. [Programming](#programming)
+   - [Step 1: Downloading the Arduino IDE](#step-1-downloading-the-arduino-ide)
+   - [Step 2: Introduction to the Arduino IDE](#step-2-introduction-to-the-arduino-ide)
+   - [Step 3: Basics of Arduino Programming and Concepts](#step-3-basics-of-arduino-programming-and-concepts)
+     - [Variables and Data Types](#variables-and-data-types)
+     - [Functions](#functions)
+     - [Pin Modes and Digital Signals](#pin-modes-and-digital-signals)
+     - [Pulse Width Modulation (PWM)](#pulse-width-modulation-pwm)
+     - [Control Structures](#control-structures)
+6. [Phase 2: Research and Exploration](#phase-2-research-and-exploration)
+7. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
+8. [Conclusion](#conclusion)
+
+---
+
 ## Project Overview
 
 The project is broken into phases, starting with the basics and gradually advancing as you explore and research. In Phase 1, you'll assemble a functional robot. Then, through research and experimentation, you'll decide how to enhance it with new features and components in later phases.
