@@ -62,7 +62,7 @@ For Phase 1, this repository contains the files and instructions you'll need to 
 - 2 x Wheels
 - 2 x Caster wheels
 
-*(Note: These parts have not been sliced yet. You will need to slice them yourself using your preferred slicing program.)*
+*(Note: These parts have not been sliced yet. You will need to slice them yourself using your preferred slicing program. Additionally, you should not slice these files blindly—reorienting the TT motor holders, wheels, and caster wheels may be required for optimal printing.)*
 
 ### Electronic Components:
 - 1 x Arduino Uno
