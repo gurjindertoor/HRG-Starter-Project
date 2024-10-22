@@ -24,7 +24,7 @@ For Phase 1, this repository contains the files and instructions you'll need to 
 - 1 x Chassis body
 - 1 x Chassis body with motor cutouts
 
-*(Note: These can also be 3D printed, though laser cutting is much faster. If you choose to 3D print them, you can download the [Open Robotic Platform]([https://openroboticplatform.com/](https://openroboticplatform.com/part:4).)*
+*(Note: These can also be 3D printed, though laser cutting is much faster. If you choose to 3D print them, you can download the files here [Open Robotic Platform](https://openroboticplatform.com/part:4).*
 
 ### 3D Printed Components:
 - 4 x 60mm connectors
@@ -266,9 +266,7 @@ void loop() {
 
 #### Serial Communication
 
-The Arduino can communicate with your computer using the **serial
-
- monitor**, which is useful for debugging and displaying data.
+The Arduino can communicate with your computer using the **serial monitor**, which is useful for debugging and displaying data.
 
 - **`Serial.begin()`**: Starts the serial communication.
 - **`Serial.println()`**: Sends data to the serial monitor.
@@ -350,7 +348,3 @@ Check out this great OnShape resource put together by one of the Houston Robotic
 ## Conclusion
 
 By following this guide, you will have built a basic robot, gained essential programming skills, and explored further research and design. Now, you’re ready to continue your journey in robotics!
-
----
-
-This version includes the expanded programming section with concepts and syntax examples while keeping the overall flow of the project intact.
