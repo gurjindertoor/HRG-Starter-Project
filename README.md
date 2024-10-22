@@ -351,9 +351,10 @@ By now, you've learned:
 2. **Functions**: Create reusable blocks of code.
 3. **Pin modes**: Set pins as inputs or outputs.
 4. **Digital signals**: Control hardware with high/low signals.
-5. **Control structures**: Use `if/else` statements and loops to manage program flow.
-6. **Arrays**: Store multiple values in a single variable.
-7. **Serial communication**: Send and receive data between your Arduino and computer.
+5. **PWM (Pulse Width Modulation)**: Simulate analog output to control motor speed or LED brightness.
+6. **Control structures**: Use `if/else` statements and loops to manage program flow.
+7. **Arrays**: Store multiple values in a single variable.
+8. **Serial communication**: Send and receive data between your Arduino and computer.
 
 With these concepts, you're ready to start writing more complex programs and adding functionality to your robot.
 
