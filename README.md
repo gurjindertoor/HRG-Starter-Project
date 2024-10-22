@@ -1,7 +1,3 @@
-Here’s the full version of the repository documentation with your revised programming section integrated:
-
----
-
 # Houston Robotics Group: Starter Project
 
 Welcome to the Houston Robotics Group’s starter project! This repository is designed to introduce beginners to the basics of robotics and electronics by guiding them through building a simple, yet cool robot.
