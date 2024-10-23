@@ -10,13 +10,14 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 1. [Project Overview](#project-overview)
 2. [What You Will Learn](#what-you-will-learn)
 3. [Phase 1: Components and Assembly Guide](#phase-1-components-and-assembly-guide)
+   - [3D Slicing](#3d-slicing)
    - [Laser-Cut Components](#laser-cut-components)
    - [3D Printed Components](#3d-printed-components)
    - [Electronic Components](#electronic-components)
    - [Miscellaneous](#miscellaneous)
    - [Assembly Instructions](#assembly-instructions)
-4. [Next Steps](#next-steps)
-5. [Programming](#programming)
+5. [Next Steps](#next-steps)
+6. [Programming](#programming)
    - [Step 1: Downloading the Arduino IDE](#step-1-downloading-the-arduino-ide)
    - [Step 2: Introduction to the Arduino IDE](#step-2-introduction-to-the-arduino-ide)
    - [Step 3: Basics of Arduino Programming and Concepts](#step-3-basics-of-arduino-programming-and-concepts)
@@ -25,9 +26,9 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
      - [Pin Modes and Digital Signals](#pin-modes-and-digital-signals)
      - [Pulse Width Modulation (PWM)](#pulse-width-modulation-pwm)
      - [Control Structures](#control-structures)
-6. [Phase 2: Research and Exploration](#phase-2-research-and-exploration)
-7. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
-8. [Conclusion](#conclusion)
+7. [Phase 2: Research and Exploration](#phase-2-research-and-exploration)
+8. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
+9. [Conclusion](#conclusion)
 
 ---
 
@@ -76,6 +77,14 @@ For Phase 1, this repository contains the files and instructions you'll need to 
 - M3 screws and nuts (several)
 
 ---
+
+### 3D Slicing:
+If you're a member of the Houston Robotics Group, then you're all too familiar with the excellent Bambu Lab 3D printers that we're allowed to use at the Ion's Prototyping Lab. As a beginner, I highly recommend downloading the official [Bambu Studio](https://bambulab.com/en/download/studio) slicing software because it makes slicing the files and setting them up to print at the lab easy. 
+
+After installing the software, here are the following steps to set it up for use with the Bambu Lab A1 3D printers at the Ion's Prototyping Lab:
+![d327efcd0ff29a8ceaff34f147fb3c5f](https://github.com/user-attachments/assets/87344290-4645-4080-a86e-4cbb9921144d)
+
+
 
 ## Assembly Instructions:
 1. Laser cut or 3D print the required components.
