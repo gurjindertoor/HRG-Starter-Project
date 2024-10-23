@@ -399,7 +399,7 @@ Now, let's dive into CAD design. Here are some free or low-cost tools to help yo
 - **OnShape**: A browser-based modeling tool with a free option. The free version makes your designs public (though hard to find), while the paid version offers privacy. OnShape is a great stepping stone to professional CAD tools like SolidWorks and Fusion360.
 - **FreeCAD**: Another open-source option, popular for integrating with ROS/ROS2 for more advanced robotics projects.
 
-Check out this great OnShape resource put together by one of the Houston Robotics Group organizers: [insert link here].
+Check out this great OnShape resource put together by one of the Houston Robotics Group organizers: (OnShape tutorials)[https://www.linkedin.com/posts/hunter-schoonover_cad-basics-activity-7229822893432455171-O2Dw/?utm_source=share&utm_medium=member_android].
 
 ---
 
