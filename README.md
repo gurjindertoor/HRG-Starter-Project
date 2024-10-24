@@ -27,8 +27,11 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
      - [Pulse Width Modulation (PWM)](#pulse-width-modulation-pwm)
      - [Control Structures](#control-structures)
 7. [Phase 2: Research and Exploration](#phase-2-research-and-exploration)
-8. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
-9. [Conclusion](#conclusion)
+    - [Resources for Research](#resources-for-research)
+    - [Installing Libraries](#installing-libraries)
+    - [My Robot](#my-robot)
+9. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
+10. [Conclusion](#conclusion)
 
 ---
 
@@ -460,8 +463,6 @@ Feel free to research additional components and ideas to take your project to th
 
 Additionally, you'll most likely need a breadboard for all of the connections and may also require a voltage regulator if you need to step down the voltage from the battery for some of the components.
 
-You'll eventually move on to using components that require a library that isn't automatically provided by the Arduino IDE as well. For example, if you use a Bluetooth module, it might require a specific library for you to utilize it. For this, you'll have to refer to the documentation provided with the module itself. Here's a guide and tutorial from the official Arduino website on how to install libaries: [Installing libraries](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
-
 For extra parts like mounts and holders, you can check [Open Robotics Platform](https://openroboticplatform.com/library). If you don't find what you need, consider designing and 3D printing your own components. (See section below).
 
 Some custom components I've made include:
@@ -469,7 +470,9 @@ Some custom components I've made include:
 - SD card holder
 - Modified caster wheel design
 
-### Resources for research:
+---
+
+### Resources for Research:
 
 When looking to expand your project or find inspiration, it’s important to explore a variety of resources. Online platforms are a great place to discover tutorials, ideas, and solutions that can help you improve your robot or add new features. Below are a few excellent websites where you can research ideas, gather information, and find parts or designs that may fit your needs.
 
@@ -491,7 +494,13 @@ How can I upgrade it to run without the USB connection? Also, what other improve
 
 ---
 
-### My robot
+### Installing Libraries
+
+You'll eventually move on to using components that require a library that isn't automatically provided by the Arduino IDE as well. For example, if you use a Bluetooth module, it might require a specific library for you to utilize it. For this, you'll have to refer to the documentation provided with the module itself. Here's a guide and tutorial from the official Arduino website on how to install libaries: [Installing libraries](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
+
+---
+
+### My Robot
 
 Here are a few pictures of my current version! (Version 2.0)
 
