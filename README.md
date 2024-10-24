@@ -16,8 +16,8 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
    - [Electronic Components](#electronic-components)
    - [Miscellaneous](#miscellaneous)
    - [Assembly Instructions](#assembly-instructions)
-5. [Next Steps](#next-steps)
-6. [Programming](#programming)
+4. [Next Steps](#next-steps)
+5. [Programming](#programming)
    - [Step 1: Downloading the Arduino IDE](#step-1-downloading-the-arduino-ide)
    - [Step 2: Introduction to the Arduino IDE](#step-2-introduction-to-the-arduino-ide)
    - [Step 3: Basics of Arduino Programming and Concepts](#step-3-basics-of-arduino-programming-and-concepts)
@@ -26,17 +26,17 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
      - [Pin Modes and Digital Signals](#pin-modes-and-digital-signals)
      - [Pulse Width Modulation (PWM)](#pulse-width-modulation-pwm)
      - [Control Structures](#control-structures)
+6. [Installing Libraries](#installing-libraries)
 7. [Phase 2: Research and Exploration](#phase-2-research-and-exploration)
     - [Resources for Research](#resources-for-research)
-    - [Installing Libraries](#installing-libraries)
-    - [My Robot](#my-robot)
-9. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
-10. [Conclusion](#conclusion)
+8. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
+    - [My Robot Example](#my-robot-example)
+9. [Conclusion](#conclusion)
 
 ---
 
 ### Backlog
-I'm currently caught up! Woohoo!
+Restructuring flow and adding to table of contents.
 
 ---
 
@@ -451,6 +451,12 @@ With these concepts, you're ready to start writing more complex programs and add
 
 ---
 
+## Installing Libraries
+
+You'll eventually move on to using components that require a library that isn't automatically provided by the Arduino IDE as well. For example, if you use a Bluetooth module, it might require a specific library for you to utilize it. For this, you'll have to refer to the documentation provided with the module itself. Here's a guide and tutorial from the official Arduino website on how to install libaries: [Installing libraries](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
+
+---
+
 ## Phase 2: Research and Exploration
 
 Now that you’ve built a basic robot, it's time to explore new possibilities through research. You could:
@@ -641,13 +647,29 @@ By using **Ohm’s Law** to calculate the power needs and understanding the diff
 
 ---
 
-### Installing Libraries
+## Phase 3: Implementing New Features
 
-You'll eventually move on to using components that require a library that isn't automatically provided by the Arduino IDE as well. For example, if you use a Bluetooth module, it might require a specific library for you to utilize it. For this, you'll have to refer to the documentation provided with the module itself. Here's a guide and tutorial from the official Arduino website on how to install libaries: [Installing libraries](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
+After completing your research, it’s time to implement your new ideas! This phase is all about expanding your robot’s functionality and customizing it.
+
+### By this point, you will have learned:
+1. How to assemble and connect components into a system.
+2. How to program with the Arduino IDE.
+3. How to research and implement new features.
+
+### CAD Modeling 
+CAD (Computer-Aided Design) modeling is the process of using computer software to create precise digital models of physical objects. These models can be used for a variety of purposes, such as designing parts for 3D printing, prototyping, or creating detailed plans for manufacturing. CAD allows you to visualize and test how different components will fit together before creating them in the real world. In robotics, CAD models are essential for designing components like frames, motor mounts, and sensor holders.
+
+Now, let's dive into CAD modeling. Here are some free or low-cost tools to help you design your own parts:
+
+- **OpenSCAD**: Free and open-source with Python-like syntax for model creation. (Not highly recommended due to poor carry over to industry software, however, if you enjoy creating files using software then by all means knock yourself out! - My files originally were created using this very software).
+- **OnShape**: A browser-based modeling tool with a free option. The free version makes your designs public (though hard to find), while the paid version offers privacy. OnShape is a great stepping stone to professional CAD tools like SolidWorks and Fusion360.
+- **FreeCAD**: Another open-source free option, popular for integrating with ROS/ROS2 for more advanced robotics projects.
+
+Check out this great OnShape resource put together by one of the Houston Robotics Group organizers: [OnShape tutorials](https://www.linkedin.com/posts/hunter-schoonover_cad-basics-activity-7229822893432455171-O2Dw/?utm_source=share&utm_medium=member_android).
 
 ---
 
-### My Robot
+### My Robot Example
 
 Here are a few pictures of my current version! (Version 2.0)
 
@@ -658,26 +680,6 @@ I'm also using a voltage regulator for the SD card module that takes in 3.3V whi
 ![robot_2](https://github.com/user-attachments/assets/1b810833-5283-475a-b796-c4dd6803856e)
 
 ![robot_3](https://github.com/user-attachments/assets/80f96b58-057c-45b4-b95e-3dd9ea03aec1)
-
-
----
-
-## Phase 3: Implementing New Features
-
-After completing your research, it’s time to implement your new ideas! This phase is all about expanding your robot’s functionality and customizing it.
-
-### By this point, you will have learned:
-1. How to assemble and connect components into a system.
-2. How to program with the Arduino IDE.
-3. How to research and implement new features.
-
-Now, let's dive into CAD design. Here are some free or low-cost tools to help you design your own parts:
-
-- **OpenSCAD**: Free and open-source with Python-like syntax for model creation. (Not highly recommended due to poor carry over to industry software, however, if you enjoy creating files using software then by all means knock yourself out! - My files originally were created using this very software).
-- **OnShape**: A browser-based modeling tool with a free option. The free version makes your designs public (though hard to find), while the paid version offers privacy. OnShape is a great stepping stone to professional CAD tools like SolidWorks and Fusion360.
-- **FreeCAD**: Another open-source free option, popular for integrating with ROS/ROS2 for more advanced robotics projects.
-
-Check out this great OnShape resource put together by one of the Houston Robotics Group organizers: [OnShape tutorials](https://www.linkedin.com/posts/hunter-schoonover_cad-basics-activity-7229822893432455171-O2Dw/?utm_source=share&utm_medium=member_android).
 
 ---
 
