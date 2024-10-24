@@ -458,6 +458,8 @@ Now that you’ve built a basic robot, it's time to explore new possibilities th
 
 Feel free to research additional components and ideas to take your project to the next level!
 
+Additionally, you'll most likely need a breadboard for all of the connections and may also require a voltage regulator if you need to step down the voltage from the battery for some of the components.
+
 You'll eventually move on to using components that require a library that isn't automatically provided by the Arduino IDE as well. For example, if you use a Bluetooth module, it might require a specific library for you to utilize it. For this, you'll have to refer to the documentation provided with the module itself. Here's a guide and tutorial from the official Arduino website on how to install libaries: [Installing libraries](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
 
 For extra parts like mounts and holders, you can check [Open Robotics Platform](https://openroboticplatform.com/library). If you don't find what you need, consider designing and 3D printing your own components. (See section below).
@@ -468,6 +470,8 @@ Some custom components I've made include:
 - Modified caster wheel design
 
 Here are a few pictures of my current version! (Version 2.0)
+
+I'm also using a voltage regulator for the SD card module that takes in 3.3V while my battery is 7.4V. 
 
 ![robot_1](https://github.com/user-attachments/assets/1fa9fc0a-28c9-4c10-a2c1-ba10664ae151)
 
