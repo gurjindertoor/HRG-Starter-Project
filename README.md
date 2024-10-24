@@ -469,6 +469,30 @@ Some custom components I've made include:
 - SD card holder
 - Modified caster wheel design
 
+### Resources for research:
+
+When looking to expand your project or find inspiration, it’s important to explore a variety of resources. Online platforms are a great place to discover tutorials, ideas, and solutions that can help you improve your robot or add new features. Below are a few excellent websites where you can research ideas, gather information, and find parts or designs that may fit your needs.
+
+- [Arduino Project Hub](https://projecthub.arduino.cc/): A platform full of tutorials and projects created by the Arduino community, perfect for finding inspiration and guidance.
+- [Instructables](https://www.instructables.com/circuits/projects): A DIY project-sharing site where makers post detailed instructions on electronics, robotics, and more.
+- [Hackster.io](https://www.hackster.io/projects): A community-driven platform for sharing hardware projects, with a focus on IoT, robotics, and microcontroller-based builds.
+- [DFRobot](https://community.dfrobot.com/): A community space for sharing ideas, tutorials, and projects related to electronics and open-source hardware.
+- [Thingiverse](https://www.thingiverse.com/): A repository of 3D printable models that can be used to enhance your robotics projects with new parts and designs.
+- [Printables](https://www.printables.com/): A community for sharing and downloading 3D printing files, offering a wide variety of functional and creative designs.
+
+Additionally, you can even utilize generative AI! Here's a simple prompt idea:
+```
+I've built a simple robotic car with a chassis, Arduino Uno, and L298 motor driver.
+It’s currently powered by a USB cable connected to my computer, and the motor driver controls two motors attached to the wheels.
+The car can move forward, backward, and turn.
+
+How can I upgrade it to run without the USB connection? Also, what other improvements would you recommend?
+```
+
+---
+
+### My robot
+
 Here are a few pictures of my current version! (Version 2.0)
 
 I'm also using a voltage regulator for the SD card module that takes in 3.3V while my battery is 7.4V. 
