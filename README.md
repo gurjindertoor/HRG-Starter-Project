@@ -465,7 +465,14 @@ Some custom components I've made include:
 - SD card holder
 - Modified caster wheel design
 
-*Insert picture here.*
+Here are a few pictures of my current version! (Version 2.0)
+
+![robot_1](https://github.com/user-attachments/assets/1fa9fc0a-28c9-4c10-a2c1-ba10664ae151)
+
+![robot_2](https://github.com/user-attachments/assets/1b810833-5283-475a-b796-c4dd6803856e)
+
+![robot_3](https://github.com/user-attachments/assets/80f96b58-057c-45b4-b95e-3dd9ea03aec1)
+
 
 ---
 
@@ -491,3 +498,5 @@ Check out this great OnShape resource put together by one of the Houston Robotic
 ## Conclusion
 
 By following this guide, you will have built a basic robot, gained essential programming skills, and explored further research and design. Now, you’re ready to continue your journey in robotics!
+
+Also feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/gurjinder-toor/).
