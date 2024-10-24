@@ -99,7 +99,7 @@ You have the option of opting into this program.
 ![413b827bc177e77f7eb14a3130d93271](https://github.com/user-attachments/assets/2721dacb-3847-4346-968c-67e15362befa)
 
 
-Click "Clear all" at the top left.
+Click "Clear all" at the top right.
 
 ![f76ae2c70084402d08412d5cfde42f5d](https://github.com/user-attachments/assets/3120be6a-691d-4953-891b-b60aab727efd)
 
