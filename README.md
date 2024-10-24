@@ -128,7 +128,7 @@ In order to start slicing, click "Create new project".
 ![078a4b880a28db1d844f114576528aeb](https://github.com/user-attachments/assets/e03b572f-87cf-417f-8575-5d3795b81b1e)
 
 
-You'll be now at this screen, here you can drag and drop the file you want to slice.
+You'll now be at this screen, here you can drag and drop the file you want to slice.
 
 ![6ef360dde8f8685e479257f074d928e0](https://github.com/user-attachments/assets/92270d15-1f34-42e1-932a-979734a7d806)
 
