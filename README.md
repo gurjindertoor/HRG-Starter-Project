@@ -34,7 +34,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 
 ## Project Overview
 
-The project is broken into phases, starting with the basics and gradually advancing as you explore and research. In Phase 1, you'll assemble a functional robot. Then, through research and experimentation, you'll decide how to enhance it with new features and components in later phases.
+The project is broken into phases, starting with the basics and gradually advancing as you explore and research. In Phase 1, you'll assemble a functional robot. Then, through research and experimentation in Phase 2, you'll decide how to enhance it with new features and components implemented in Phase 3!
 
 ## What You Will Learn:
 1. How to assemble components into a working system.
