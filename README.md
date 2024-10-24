@@ -454,6 +454,8 @@ Now that you’ve built a basic robot, it's time to explore new possibilities th
 - Move from a USB-powered setup to a battery-powered one with a switch.
 - Add a LiDAR sensor for more advanced navigation.
 
+*(Note: I HIGHLY recommend figuring out how to connect a battery with a switch to move away from the wired connection and use a Bluetooth module so you're able to control the robot car via your phone or other means!)*
+
 Feel free to research additional components and ideas to take your project to the next level!
 
 You'll eventually move on to using components that require a library that isn't automatically provided by the Arduino IDE as well. For example, if you use a Bluetooth module, it might require a specific library for you to utilize it. For this, you'll have to refer to the documentation provided with the module itself. Here's a guide and tutorial from the official Arduino website on how to install libaries: [Installing libraries](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
