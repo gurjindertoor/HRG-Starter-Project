@@ -456,9 +456,9 @@ Now that you’ve built a basic robot, it's time to explore new possibilities th
 
 Feel free to research additional components and ideas to take your project to the next level!
 
-You'll eventually move on to using components that require a library that isn't automatically provided by the Arduino IDE as well. For example, if you use a Bluetooth module, it might require a specific library for you to utilize it. For this, you'll have to refer to the documentation provided with the module itself. Here's a guide and tutorial from the official Arduino website on how to install libaries. [Installing libraries](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
+You'll eventually move on to using components that require a library that isn't automatically provided by the Arduino IDE as well. For example, if you use a Bluetooth module, it might require a specific library for you to utilize it. For this, you'll have to refer to the documentation provided with the module itself. Here's a guide and tutorial from the official Arduino website on how to install libaries: [Installing libraries](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
 
-For extra parts like mounts and holders, you can check [Open Robotics Platform](https://openroboticplatform.com/library). If you don't find what you need, consider designing and 3D printing your own components.
+For extra parts like mounts and holders, you can check [Open Robotics Platform](https://openroboticplatform.com/library). If you don't find what you need, consider designing and 3D printing your own components. (See section below).
 
 Some custom components I've made include:
 - Battery holder
@@ -487,9 +487,9 @@ After completing your research, it’s time to implement your new ideas! This ph
 
 Now, let's dive into CAD design. Here are some free or low-cost tools to help you design your own parts:
 
-- **OpenSCAD**: Free and open-source with Python-like syntax for model creation.
+- **OpenSCAD**: Free and open-source with Python-like syntax for model creation. (Not highly recommended due to poor carry over to industry software, however, if you enjoy creating files using software then by all means knock yourself out! - My files originally were created using this very software).
 - **OnShape**: A browser-based modeling tool with a free option. The free version makes your designs public (though hard to find), while the paid version offers privacy. OnShape is a great stepping stone to professional CAD tools like SolidWorks and Fusion360.
-- **FreeCAD**: Another open-source option, popular for integrating with ROS/ROS2 for more advanced robotics projects.
+- **FreeCAD**: Another open-source free option, popular for integrating with ROS/ROS2 for more advanced robotics projects.
 
 Check out this great OnShape resource put together by one of the Houston Robotics Group organizers: [OnShape tutorials](https://www.linkedin.com/posts/hunter-schoonover_cad-basics-activity-7229822893432455171-O2Dw/?utm_source=share&utm_medium=member_android).
 
