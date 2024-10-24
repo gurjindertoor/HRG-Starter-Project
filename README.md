@@ -52,7 +52,7 @@ For Phase 1, this repository contains the files and instructions you'll need to 
 - 1 x Chassis body
 - 1 x Chassis body with motor cutouts
 
-*(Note: These can also be 3D printed, though laser cutting is much faster. If you choose to 3D print them, you can download the files here [Open Robotic Platform](https://openroboticplatform.com/part:4).*
+*(Note: These can also be 3D printed, though laser cutting is much faster. If you choose to 3D print them, you can download the files here [Open Robotic Platform](https://openroboticplatform.com/part:4)).*
 
 ### 3D Printed Components:
 - 4 x 60mm connectors
