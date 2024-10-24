@@ -36,8 +36,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 ---
 
 ### Backlog
-1. Add Ohm's Law
-2. Add how to determine battery requirements
+I'm currently caught up! Woohoo!
 
 ---
 
@@ -496,7 +495,149 @@ It’s currently powered by a USB cable connected to my computer, and the motor 
 The car can move forward, backward, and turn.
 
 How can I upgrade it to run without the USB connection? Also, what other improvements would you recommend?
+
+Could you also create a wiring diagram for me?
 ```
+
+---
+
+## Understanding Ohm’s Law and Picking a Battery
+
+This section will help you understand the basic principles of **Ohm’s Law**, how to calculate the **voltage**, **current**, and **resistance** needs of your components, and how to select the appropriate battery for your robotic car.
+
+---
+
+### Ohm’s Law: A Simple Explanation
+
+**Ohm’s Law** describes the relationship between **voltage (V)**, **current (I)**, and **resistance (R)** in a circuit. The formula is:
+
+`V = I * R`
+
+Where:
+- **Voltage (V)** is the “push” that makes electricity flow through a circuit, measured in volts (V).
+- **Current (I)** is the flow of electric charge, measured in amps (A).
+- **Resistance (R)** is how much a component resists the flow of electricity, measured in ohms (Ω).
+
+In simple terms:
+- **Voltage** pushes current through the circuit.
+- **Resistance** slows down the current.
+- **Current** is the result of the push from voltage and the resistance in the circuit.
+
+---
+
+### How to Determine Voltage, Current, and Resistance for Each Component
+
+#### 1. Determining Voltage Needs
+
+Each component in your circuit (motors, Arduino, etc.) has a specific voltage requirement. This is typically listed in the component's **specifications** or **datasheet**.
+
+- **Arduino Uno**: Requires **5V** via the USB port or **7-12V** via the external power jack.
+- **Yellow TT Motors**: These motors typically operate between **3V and 6V**. For full performance, supply **6V**.
+- **L298 Motor Driver**: The L298 motor driver can handle input voltages between **5V and 35V**, but it’s ideal to use between **7V and 12V** for optimal performance.
+
+#### How to Use This Information
+
+To determine the total voltage your circuit needs, ensure your power supply (battery) matches or exceeds the highest voltage requirement of the components in your system. For example, if your Arduino needs 5V and your motors need 6V, you might use a **7.4V LiPo battery**, which can supply enough voltage for both.
+
+---
+
+#### 2. Determining Current Needs
+
+Each component also requires a certain amount of current (I) to operate. This is usually measured in **amps (A)** or **milliamps (mA)**. You can find the current requirements in the component's **specifications** or **datasheet**.
+
+- **Yellow TT Motors**: The datasheet for the TT motor typically lists a **no-load current** of **150mA (0.15A)** and a **stall current** of up to **1.5A**. Under normal conditions, each motor will likely draw about **1A**.
+- **Arduino Uno**: The Arduino itself uses about **50mA**, but this can increase depending on what components (like sensors) are connected to it.
+- **L298 Motor Driver**: The motor driver uses a small amount of current, around **30-60mA**.
+
+#### Total Current
+
+To determine the **total current** needed for your project, sum the current requirements of all your components. For example:
+- **Two motors**: Each requires **1A**, so **2A** total.
+- **Arduino**: **50mA** = **0.05A**.
+- **Motor driver**: **60mA** = **0.06A**.
+
+`Total current = 2A (motors) + 0.05A (Arduino) + 0.06A (motor driver) = 2.11A`
+
+Your power supply (battery) needs to provide at least **2.11A** of current for your robot to work properly.
+
+---
+
+#### 3. Determining Resistance
+
+**Resistance (R)** is a measure of how much a component opposes the flow of current. It is usually given in **ohms (Ω)**. You can find the resistance of components in their **datasheets** or measure it directly with a **multimeter**.
+
+- **Yellow TT Motors**: The resistance of a motor can often be calculated using **Ohm’s Law** if you know the voltage and current. For example, if the motor operates at **6V** and draws **1A**, the resistance is:
+
+    `R = V / I`
+
+- **LEDs and Resistors**: LEDs typically don’t have a fixed resistance. Instead, you would use resistors with LEDs to limit the current. The voltage drop across the LED will be listed in the datasheet, and you can use resistors to adjust the current accordingly.
+
+- **Sensors**: Most sensors have an internal resistance, but you typically don’t need to calculate this unless you're building custom circuits. The important thing is to ensure they operate within their voltage and current ranges.
+
+#### Using a Multimeter to Measure Resistance
+
+If you don’t have the resistance value from the datasheet, you can measure it using a **multimeter**:
+1. Set your multimeter to the **ohms (Ω)** setting.
+2. Touch the multimeter probes to the two terminals of the component.
+3. The multimeter will display the resistance in ohms.
+
+This method is useful for measuring motor windings or checking resistors in your circuit.
+
+---
+
+### Picking a Battery
+
+Now that you understand the **voltage**, **current**, and **resistance** needs of your components, let’s look at how to pick the right battery for your robotic car.
+
+#### Voltage
+
+Your motors require **6V** to operate at full power, and the Arduino Uno and L298 motor driver can handle higher voltages. A **7.4V LiPo battery** or a **7.2V NiMH battery** would be ideal, as both provide enough voltage for all components.
+
+#### Current
+
+Your total current draw is approximately **2.11A**. Choose a battery that can supply at least this much current to ensure your components have enough power.
+
+#### Battery Types
+
+Here are some battery types you can consider:
+
+1. **LiPo (Lithium Polymer)**:
+   - **Voltage**: A 7.4V LiPo battery (2S).
+   - **Pros**: Lightweight, powerful, and capable of supplying high current.
+   - **Cons**: Requires careful handling and charging.
+   - **Recommended for**: Projects requiring high performance and mobility.
+
+2. **NiMH (Nickel Metal Hydride)**:
+   - **Voltage**: A 6-cell NiMH battery (7.2V).
+   - **Pros**: Safer and more stable, easier to charge.
+   - **Cons**: Heavier than LiPo, less energy-dense.
+   - **Recommended for**: Beginner projects where safety is a priority.
+
+3. **Alkaline (Non-Rechargeable)**:
+   - **Voltage**: A pack of four AA batteries (6V).
+   - **Pros**: Inexpensive and easy to find.
+   - **Cons**: Non-rechargeable, lower capacity.
+   - **Recommended for**: Small, simple, short-term projects.
+     
+**Note**: There are several other types of batteries aswell, the ones listed above are just the ones recommended for this project. Each battery type has its own advantages and disadvantages in terms of weight, safety, and charging requirements.
+
+#### Battery Capacity (mAh)
+
+Battery capacity, measured in **milliamp-hours (mAh)**, determines how long your robot will run. If your total current draw is **2.11A** and you want your robot to run for about **1 hour**, you’ll need a battery with a capacity of at least **2110mAh**.
+
+For longer runtimes, choose a battery with a higher capacity, such as **3000mAh** or more.
+
+---
+
+### Example for Your Robotic Car
+
+Let’s apply all this information to your specific robotic car, which has **2 yellow TT motors**, an **L298 motor driver**, and an **Arduino Uno**:
+
+- **Voltage**: Your motors need **6V**, and the Arduino Uno and L298 motor driver can handle higher voltages. A **7.4V LiPo battery** or a **7.2V NiMH battery** would work well.
+- **Current**: Your total current draw is approximately **2.11A**. Choose a battery that can supply at least this much current.
+- **Battery Capacity**: If you want your robot to run for about an hour, choose a battery with a capacity of at least **2110mAh**. For more runtime, pick a battery with higher mAh, such as **3000mAh** or more.
+
+By using **Ohm’s Law** to calculate the power needs and understanding the different types of batteries, you can choose the right battery to power your robotic car effectively!
 
 ---
 
