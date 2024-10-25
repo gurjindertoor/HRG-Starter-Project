@@ -712,8 +712,9 @@ After completing your research, it’s time to implement your new ideas! This ph
 1. How to assemble and connect components into a system.
 2. How to program with the Arduino IDE.
 3. How to research and implement new features.
-4. Ohm's Law
-5. Picking a Battery
+4. Why Ohm's Law is important.
+5. How to determine Voltage, Current, Resistance requirements for your components.
+6. How to pick a battery for your robot.
 
 ### CAD Modeling 
 CAD (Computer-Aided Design) modeling is the process of using computer software to create precise digital models of physical objects. These models can be used for a variety of purposes, such as designing parts for 3D printing, prototyping, or creating detailed plans for manufacturing. CAD allows you to visualize and test how different components will fit together before creating them in the real world. In robotics, CAD models are essential for designing components like frames, motor mounts, and sensor holders.
