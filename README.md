@@ -15,7 +15,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
    - [Electronic Components](#electronic-components)
    - [Miscellaneous](#miscellaneous)
    - [3D Slicing](#3d-slicing)
-      - [Bambu Studio Software Installation](#bambu-studio-software-setup)
+      - [Bambu Studio Software Setup](#bambu-studio-software-setup)
       - [Slicing](#slicing)
    - [Assembly Instructions](#assembly-instructions)
 4. [Next Steps](#next-steps)
