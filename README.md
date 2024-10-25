@@ -10,11 +10,11 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 1. [Project Overview](#project-overview)
 2. [What You Will Learn](#what-you-will-learn)
 3. [Phase 1: Components and Assembly Guide](#phase-1-components-and-assembly-guide)
-   - [3D Slicing](#3d-slicing)
    - [Laser-Cut Components](#laser-cut-components)
    - [3D Printed Components](#3d-printed-components)
    - [Electronic Components](#electronic-components)
    - [Miscellaneous](#miscellaneous)
+   - [3D Slicing](#3d-slicing)
    - [Assembly Instructions](#assembly-instructions)
 4. [Next Steps](#next-steps)
 5. [Programming](#programming)
@@ -29,14 +29,20 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 6. [Installing Libraries](#installing-libraries)
 7. [Phase 2: Research and Exploration](#phase-2-research-and-exploration)
     - [Resources for Research](#resources-for-research)
-8. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
+8. [Understanding Ohm's Law](#understanding-ohms-law)
+9. [How to Determine Voltage, Current, and Resistance for Each Component](#how-to-determine-voltage-current-and-resistance-for-each-component)
+    - [Determining Voltage Needs](#determining-voltage-needs)
+    - [Determining Current Needs](#determining-current-needs)
+    - [Determining Resistance](#determining-resistance)
+10. [Picking a Battery](#picking-a-battery)
+11. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
     - [My Robot Example](#my-robot-example)
-9. [Conclusion](#conclusion)
+12. [Conclusion](#conclusion)
 
 ---
 
 ### Backlog
-Restructuring flow and adding to table of contents.
+I think I'm caught up?
 
 ---
 
@@ -48,7 +54,10 @@ The project is broken into phases, starting with the basics and gradually advanc
 1. How to assemble components into a working system.
 2. Introduction to programming using the Arduino IDE (based on C/C++).
 3. How to research and apply new ideas.
-4. Basic CAD design skills.
+4. Ohm's Law
+5. How to determine Voltage, Current, and Reistance for each of your components
+6. How to pick a battery
+7. Basic CAD design skills.
 
 ---
 
@@ -468,13 +477,17 @@ Now that you’ve built a basic robot, it's time to explore new possibilities th
 - Move from a USB-powered setup to a battery-powered one with a switch.
 - Add a LiDAR sensor for more advanced navigation.
 
+---
+
 *(Note: I HIGHLY recommend figuring out how to connect a battery with a switch to move away from the wired connection and use a Bluetooth module so you're able to control the robot car via your phone or other means!)*
 
 Feel free to research additional components and ideas to take your project to the next level!
 
 Additionally, you'll most likely need a breadboard for all of the connections and may also require a voltage regulator if you need to step down the voltage from the battery for some of the components.
 
-For extra parts like mounts and holders, you can check [Open Robotics Platform](https://openroboticplatform.com/library). If you don't find what you need, consider designing and 3D printing your own components. (See section below).
+For extra parts like mounts and holders, you can check [Open Robotics Platform](https://openroboticplatform.com/library). If you don't find what you need, consider designing and 3D printing your own components. (See [section](#cad-modeling) below).
+
+---
 
 Some custom components I've made include:
 - Battery holder
@@ -494,20 +507,25 @@ When looking to expand your project or find inspiration, it’s important to exp
 - [Thingiverse](https://www.thingiverse.com/): A repository of 3D printable models that can be used to enhance your robotics projects with new parts and designs.
 - [Printables](https://www.printables.com/): A community for sharing and downloading 3D printing files, offering a wide variety of functional and creative designs.
 
-Additionally, you can even utilize generative AI! Here's a simple prompt idea:
+Additionally, you can even utilize generative AI! Here are two simple prompt ideas:
+
 ```
-I've built a simple robotic car with a chassis, Arduino Uno, and L298 motor driver.
-It’s currently powered by a USB cable connected to my computer, and the motor driver controls two motors attached to the wheels.
-The car can move forward, backward, and turn.
+I've created a [insert_robot_type_here]. It includes [list_parts].
 
-How can I upgrade it to run without the USB connection? Also, what other improvements would you recommend?
+How could I improve it or what other features should I include?
+```
 
-Could you also create a wiring diagram for me?
+```
+I've created a [insert_robot_type_here]. It includes [list_parts].
+
+How do I [insert_feature here].
+
+Please include a wiring diagram/flow chart.
 ```
 
 ---
 
-## Understanding Ohm’s Law and Picking a Battery
+## Understanding Ohm’s Law
 
 This section will help you understand the basic principles of **Ohm’s Law**, how to calculate the **voltage**, **current**, and **resistance** needs of your components, and how to select the appropriate battery for your robotic car.
 
@@ -531,9 +549,9 @@ In simple terms:
 
 ---
 
-### How to Determine Voltage, Current, and Resistance for Each Component
+## How to Determine Voltage, Current, and Resistance for Each Component
 
-#### 1. Determining Voltage Needs
+### Determining Voltage Needs
 
 Each component in your circuit (motors, Arduino, etc.) has a specific voltage requirement. This is typically listed in the component's **specifications** or **datasheet**.
 
@@ -541,13 +559,14 @@ Each component in your circuit (motors, Arduino, etc.) has a specific voltage re
 - **Yellow TT Motors**: These motors typically operate between **3V and 6V**. For full performance, supply **6V**.
 - **L298 Motor Driver**: The L298 motor driver can handle input voltages between **5V and 35V**, but it’s ideal to use between **7V and 12V** for optimal performance.
 
+
 #### How to Use This Information
 
 To determine the total voltage your circuit needs, ensure your power supply (battery) matches or exceeds the highest voltage requirement of the components in your system. For example, if your Arduino needs 5V and your motors need 6V, you might use a **7.4V LiPo battery**, which can supply enough voltage for both.
 
 ---
 
-#### 2. Determining Current Needs
+### Determining Current Needs
 
 Each component also requires a certain amount of current (I) to operate. This is usually measured in **amps (A)** or **milliamps (mA)**. You can find the current requirements in the component's **specifications** or **datasheet**.
 
@@ -568,7 +587,7 @@ Your power supply (battery) needs to provide at least **2.11A** of current for y
 
 ---
 
-#### 3. Determining Resistance
+###  Determining Resistance
 
 **Resistance (R)** is a measure of how much a component opposes the flow of current. It is usually given in **ohms (Ω)**. You can find the resistance of components in their **datasheets** or measure it directly with a **multimeter**.
 
@@ -577,6 +596,8 @@ Your power supply (battery) needs to provide at least **2.11A** of current for y
     `R = V / I`
 
 - **LEDs and Resistors**: LEDs typically don’t have a fixed resistance. Instead, you would use resistors with LEDs to limit the current. The voltage drop across the LED will be listed in the datasheet, and you can use resistors to adjust the current accordingly.
+
+*(Note: I included LEDs here as they're an easy example to discuss in terms of resistance).*
 
 - **Sensors**: Most sensors have an internal resistance, but you typically don’t need to calculate this unless you're building custom circuits. The important thing is to ensure they operate within their voltage and current ranges.
 
@@ -591,19 +612,19 @@ This method is useful for measuring motor windings or checking resistors in your
 
 ---
 
-### Picking a Battery
+## Picking a Battery
 
 Now that you understand the **voltage**, **current**, and **resistance** needs of your components, let’s look at how to pick the right battery for your robotic car.
 
-#### Voltage
+### Voltage
 
 Your motors require **6V** to operate at full power, and the Arduino Uno and L298 motor driver can handle higher voltages. A **7.4V LiPo battery** or a **7.2V NiMH battery** would be ideal, as both provide enough voltage for all components.
 
-#### Current
+### Current
 
 Your total current draw is approximately **2.11A**. Choose a battery that can supply at least this much current to ensure your components have enough power.
 
-#### Battery Types
+### Battery Types
 
 Here are some battery types you can consider:
 
@@ -627,7 +648,7 @@ Here are some battery types you can consider:
      
 **Note**: There are several other types of batteries aswell, the ones listed above are just the ones recommended for this project. Each battery type has its own advantages and disadvantages in terms of weight, safety, and charging requirements.
 
-#### Battery Capacity (mAh)
+### Battery Capacity (mAh)
 
 Battery capacity, measured in **milliamp-hours (mAh)**, determines how long your robot will run. If your total current draw is **2.11A** and you want your robot to run for about **1 hour**, you’ll need a battery with a capacity of at least **2110mAh**.
 
@@ -655,6 +676,8 @@ After completing your research, it’s time to implement your new ideas! This ph
 1. How to assemble and connect components into a system.
 2. How to program with the Arduino IDE.
 3. How to research and implement new features.
+4. Ohm's Law
+5. Picking a Battery
 
 ### CAD Modeling 
 CAD (Computer-Aided Design) modeling is the process of using computer software to create precise digital models of physical objects. These models can be used for a variety of purposes, such as designing parts for 3D printing, prototyping, or creating detailed plans for manufacturing. CAD allows you to visualize and test how different components will fit together before creating them in the real world. In robotics, CAD models are essential for designing components like frames, motor mounts, and sensor holders.
