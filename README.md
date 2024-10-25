@@ -42,7 +42,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 ---
 
 ### Backlog
-I think I'm caught up?
+Formatting between the Bambu Lab software images to be more clear.
 
 ---
 
