@@ -15,7 +15,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
    - [Electronic Components](#electronic-components)
    - [Miscellaneous](#miscellaneous)
    - [3D Slicing](#3d-slicing)
-      - [Bambu Studio Software Installation](#bambu-studio-software-installation)
+      - [Bambu Studio Software Installation](#bambu-studio-software-setup)
       - [Slicing](#slicing)
    - [Assembly Instructions](#assembly-instructions)
 4. [Next Steps](#next-steps)
@@ -138,7 +138,7 @@ After installing the software, here are the following steps to set it up for use
 
 7. **You can choose to install the Bambu Network plug-in** (but since we'll be at the lab, there's no need and will transfer files via microSD card)
 
-**Click "Finish".**
+   **Click "Finish".**
 
 ![aa87a1533f24bba3da16bbca9ab16e82](https://github.com/user-attachments/assets/f4aefb07-f2ad-464a-ac6b-6350b29a3a2d)
 
@@ -158,9 +158,9 @@ Now you'll be at the home screen. This is where you can create a new project, op
 
 3. **Once you're ready, you'll hit "Slice plate".**
 
-I'm slicing the Arduino Uno holder, here it is after I've dropped it in.
+   I'm slicing the Arduino Uno holder, here it is after I've dropped it in.
 
-Once you've dropped it in, you can play around with the orientation of the placement if you'd like using the buttons at the top.
+   Once you've dropped it in, you can play around with the orientation of the placement if you'd like using the buttons at the top.
 
 ![d7fb77cb6a651e45bf824c74fd2ccbd5](https://github.com/user-attachments/assets/42b17bfa-cbe7-4c45-b84c-4c5e0ef1a67f)
 
