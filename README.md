@@ -15,6 +15,8 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
    - [Electronic Components](#electronic-components)
    - [Miscellaneous](#miscellaneous)
    - [3D Slicing](#3d-slicing)
+      - [Bambu Studio Software Installation](#bambu-studio-software-installation)
+      - [Slicing](#slicing)
    - [Assembly Instructions](#assembly-instructions)
 4. [Next Steps](#next-steps)
 5. [Programming](#programming)
@@ -42,7 +44,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 ---
 
 ### Backlog
-Formatting between the Bambu Lab software images to be more clear.
+I think I'm caught up!
 
 ---
 
@@ -98,84 +100,89 @@ For Phase 1, this repository contains the files and instructions you'll need to 
 ### 3D Slicing:
 If you're a member of the Houston Robotics Group, then you're all too familiar with the excellent Bambu Lab 3D printers that we're allowed to use at the Ion's Prototyping Lab. As a beginner, I highly recommend downloading the official [Bambu Studio](https://bambulab.com/en/download/studio) slicing software because it makes slicing the files and setting them up to print at the lab easy. 
 
-After installing the software, here are the following steps to set it up for use with the Bambu Lab A1 3D printers at the Ion's Prototyping Lab:
+---
+### Bambu Studio Software Setup
+
+After installing the software, here are the following steps to set it up for use with the Bambu Lab A1 3D printers.
 
 
-Click "Get Started".
+1. **Click "Get Started".**
 
 ![d327efcd0ff29a8ceaff34f147fb3c5f](https://github.com/user-attachments/assets/87344290-4645-4080-a86e-4cbb9921144d)
 
 
-Click "North America" and then "Next".
+2. **Click "North America" and then "Next".**
 
 ![6647cc7399c96918dd793b9de228737f](https://github.com/user-attachments/assets/01f266dc-68eb-404d-997a-53ea7663d320)
 
 
-You have the option of opting into this program.
+3. **You have the option of opting into this program.**
 
 ![413b827bc177e77f7eb14a3130d93271](https://github.com/user-attachments/assets/2721dacb-3847-4346-968c-67e15362befa)
 
 
-Click "Clear all" at the top right.
+4. **Click "Clear all" at the top right.**
 
 ![f76ae2c70084402d08412d5cfde42f5d](https://github.com/user-attachments/assets/3120be6a-691d-4953-891b-b60aab727efd)
 
 
-Click "0.4mm nozzle" under Bambu Lab A1.
+5. **Click "0.4mm nozzle" under Bambu Lab A1.**
 
 ![8bf0f3ae1beb443b32336c14dc2efbf1](https://github.com/user-attachments/assets/2d090ad2-22d5-4d21-9f83-6bd00fcd36d3)
 
 
-Here you can click "Next".
+6. **Here you can click "Next".**
 
 ![e117847dfa575cc9cee71fc05351f511](https://github.com/user-attachments/assets/27cef122-4fcb-4397-aab0-fc9f03c2199d)
 
 
-You can choose to install the Bambu Network plug-in (but since we'll be at the lab, there's no need and will transfer files via microSD card).
+7. **You can choose to install the Bambu Network plug-in** (but since we'll be at the lab, there's no need and will transfer files via microSD card)
 
-Click "Finish".
+**Click "Finish".**
 
 ![aa87a1533f24bba3da16bbca9ab16e82](https://github.com/user-attachments/assets/f4aefb07-f2ad-464a-ac6b-6350b29a3a2d)
 
-
+---
+### Slicing
 Now you'll be at the home screen. This is where you can create a new project, open a project, or view your previous projects.
 
-In order to start slicing, click "Create new project".
+1. **In order to start slicing, click "Create new project".**
 
 ![078a4b880a28db1d844f114576528aeb](https://github.com/user-attachments/assets/e03b572f-87cf-417f-8575-5d3795b81b1e)
 
 
-You'll now be at this screen, here you can drag and drop the file you want to slice.
+2. **You'll now be at this screen, here you can drag and drop the file you want to slice.**
 
 ![6ef360dde8f8685e479257f074d928e0](https://github.com/user-attachments/assets/92270d15-1f34-42e1-932a-979734a7d806)
 
+
+3. **Once you're ready, you'll hit "Slice plate".**
 
 I'm slicing the Arduino Uno holder, here it is after I've dropped it in.
 
 Once you've dropped it in, you can play around with the orientation of the placement if you'd like using the buttons at the top.
 
-Once you're ready, you'll hit "Slice plate".
-
 ![d7fb77cb6a651e45bf824c74fd2ccbd5](https://github.com/user-attachments/assets/42b17bfa-cbe7-4c45-b84c-4c5e0ef1a67f)
 
 
-Once it's sliced, this is what it'll look like:
+4. **Once it's sliced, this is what it'll look like:**
 
 ![7115e3ed8adb511f0f342908009dc5df](https://github.com/user-attachments/assets/39852d50-ba2f-4438-94ba-8ac99cc6af82)
 
 
-After you're done slicing, you'll click the drop down menu for the button at the top right and select "Export all sliced file" then click on it.
+5. **After you're done slicing, you'll click the drop down menu for the button at the top right and select "Export all sliced file" then click on it.**
 
 ![b47697c934c78f9a6228701e62ea64bb](https://github.com/user-attachments/assets/85d7dac6-6ab5-46ec-ad86-219f6927d6dc)
 
 
-You'll be now asked to save the sliced file, go ahead save it somewhere you'll be able to access. 
+6. **You'll be now asked to save the sliced file, go ahead save it somewhere you'll be able to access.**
 
 ![b8a190ded71b2ad8c836ff568ff25c5b](https://github.com/user-attachments/assets/0865621c-e556-41b6-994d-e803b93fb27d)
 
 
-From here, once ready, we'll copy it over to a microSD card to be used with the Bambu Lab A1 3D printer.
+7. **From here, once ready, we'll copy it over to a microSD card to be used with the Bambu Lab A1 3D printer.**
 
+---
 
 ## Assembly Instructions:
 1. Laser cut or 3D print the required components.
