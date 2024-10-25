@@ -14,6 +14,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
    - [3D Printed Components](#3d-printed-components)
    - [Electronic Components](#electronic-components)
    - [Miscellaneous](#miscellaneous)
+   - [Laser Cutting](#laser-cutting)
    - [3D Slicing](#3d-slicing)
       - [Bambu Studio Software Setup](#bambu-studio-software-setup)
       - [Slicing](#slicing)
@@ -97,8 +98,18 @@ For Phase 1, this repository contains the files and instructions you'll need to 
 
 ---
 
+### Laser Cutting:
+
+If you're a member of the Houston Robotics Group, please reach out to me for assistance in laser cutting your chassis. You will not be authorized to use the laser cutters unless you have completed the Laser Cutting class offered by the Ion's Prototyping Lab or demonstrated your experience to the lab supervisors.
+
+As mentioned above, 3D printing the chassis is a viable alternative, though it will take significantly longer to complete. Laser cutting is highly recommended for efficiency, but if you are not a member of the Houston Robotics Group, the Ion's Prototyping Lab, TXRX (another makerspace in Houston), or do not have access to a laser cutter, 3D printing may be your best option for creating the chassis.
+
+---
+
 ### 3D Slicing:
-If you're a member of the Houston Robotics Group, then you're all too familiar with the excellent Bambu Lab 3D printers that we're allowed to use at the Ion's Prototyping Lab. As a beginner, I highly recommend downloading the official [Bambu Studio](https://bambulab.com/en/download/studio) slicing software because it makes slicing the files and setting them up to print at the lab easy. 
+If you're a member of the Houston Robotics Group, you’re likely familiar with the high-quality **Bambu Lab 3D printers** available at the Ion's Prototyping Lab. For beginners, I recommend downloading the official [Bambu Studio](https://bambulab.com/en/download/studio) slicing software, as it simplifies the process of slicing files and setting them up for printing at the lab.
+
+*(Note: While Bambu Studio is recommended, it's perfectly fine to use other slicing software, such as OrcaSlicer, which is also popular among lab members. If you’re using a personal 3D printer, feel free to use your preferred slicing software as needed.)*
 
 ---
 ### Bambu Studio Software Setup
