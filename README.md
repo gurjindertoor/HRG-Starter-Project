@@ -33,6 +33,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 7. [Phase 2: Research and Exploration](#phase-2-research-and-exploration)
     - [Resources for Research](#resources-for-research)
 8. [Understanding Ohm's Law](#understanding-ohms-law)
+    - [Understanding Voltage and Its Role in a Circuit](#understanding-voltage-and-its-role-in-a-circuit)
 9. [How to Determine Voltage, Current, and Resistance for Each Component](#how-to-determine-voltage-current-and-resistance-for-each-component)
     - [Determining Voltage Needs](#determining-voltage-needs)
     - [Determining Current Needs](#determining-current-needs)
@@ -46,6 +47,8 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 
 ### Backlog
 I think I'm caught up!
+
+If you have any suggestions, feedback, or questions, feel free to connect on [LinkedIn](https://www.linkedin.com/in/gurjinder-toor/) and message me!
 
 ---
 
@@ -566,6 +569,21 @@ In simple terms:
 - **Current** is the result of the push from voltage and the resistance in the circuit.
 
 ---
+
+### Understanding Voltage and Its Role in a Circuit
+
+**Voltage**, often called "electric potential," drives the movement of electric charge through a circuit. When a voltage source, like a battery, is connected to a circuit, the difference in electric potential between the positive and negative terminals creates an electric field. This field pushes charges (typically electrons) to flow, creating an electric current.
+
+According to **Ohm’s Law**, increasing the voltage across a circuit (while keeping resistance constant) will increase the current. This means that with higher voltage, a greater amount of charge flows per second, resulting in a higher current.
+
+In a closed circuit, the rate at which the electric field pushes charges through the circuit is steady. Increasing the voltage raises the **amount** of charge flowing per second (current) rather than the **speed** at which individual charges move.
+
+- **If the voltage is too high**, it can drive excessive current through the circuit, potentially overloading and damaging components. (This is where resistance comes in).
+- **If the voltage is too low**, there may not be enough current to power the components, leading to underperformance or malfunction.
+
+When voltage is within the correct range, components receive the appropriate amount of current, allowing them to operate efficiently and safely.
+
+--- 
 
 ## How to Determine Voltage, Current, and Resistance for Each Component
 
