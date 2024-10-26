@@ -8,7 +8,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
-2. [Embracing The Challenge of Robots](#embracing-the-challenge-of-robots)
+2. [Embracing The Challenge of Robotics](#embracing-the-challenge-of-robotics)
 3. [What You Will Learn](#what-you-will-learn)
 4. [Phase 1: Components and Assembly Guide](#phase-1-components-and-assembly-guide)
    - [Laser-Cut Components](#laser-cut-components)
@@ -84,8 +84,6 @@ The remaining **30%** is left for you to explore, experiment, and problem-solve 
 3. **Connecting the Motor Driver to the Arduino Uno**: Guidance on wiring the motor driver to the Arduino Uno is not included, allowing you the opportunity to figure out this connection.
 
 ---
-
-This version maintains a consistent tone and structure with the rest of the document. Let me know if further adjustments are needed!
 
 ## Phase 1: Components and Assembly Guide
 
