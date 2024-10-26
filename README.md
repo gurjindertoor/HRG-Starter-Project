@@ -8,8 +8,9 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 
 ## Table of Contents
 1. [Project Overview](#project-overview)
-2. [What You Will Learn](#what-you-will-learn)
-3. [Phase 1: Components and Assembly Guide](#phase-1-components-and-assembly-guide)
+2. [Embracing The Challenge of Robots](#embracing-the-challenge-of-robots)
+3. [What You Will Learn](#what-you-will-learn)
+4. [Phase 1: Components and Assembly Guide](#phase-1-components-and-assembly-guide)
    - [Laser-Cut Components](#laser-cut-components)
    - [3D Printed Components](#3d-printed-components)
    - [Electronic Components](#electronic-components)
@@ -19,8 +20,8 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
       - [Bambu Studio Software Setup](#bambu-studio-software-setup)
       - [Slicing](#slicing)
    - [Assembly Instructions](#assembly-instructions)
-4. [Next Steps](#next-steps)
-5. [Programming](#programming)
+5. [Next Steps](#next-steps)
+6. [Programming](#programming)
    - [Step 1: Downloading the Arduino IDE](#step-1-downloading-the-arduino-ide)
    - [Step 2: Introduction to the Arduino IDE](#step-2-introduction-to-the-arduino-ide)
    - [Step 3: Basics of Arduino Programming and Concepts](#step-3-basics-of-arduino-programming-and-concepts)
@@ -29,24 +30,24 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
      - [Pin Modes and Digital Signals](#pin-modes-and-digital-signals)
      - [Pulse Width Modulation (PWM)](#pulse-width-modulation-pwm)
      - [Control Structures](#control-structures)
-6. [Installing Libraries](#installing-libraries)
-7. [Phase 2: Research and Exploration](#phase-2-research-and-exploration)
+7. [Installing Libraries](#installing-libraries)
+8. [Phase 2: Research and Exploration](#phase-2-research-and-exploration)
     - [Resources for Research](#resources-for-research)
-8. [Understanding Ohm's Law](#understanding-ohms-law)
+9. [Understanding Ohm's Law](#understanding-ohms-law)
     - [Understanding Voltage and Its Role in a Circuit](#understanding-voltage-and-its-role-in-a-circuit)
-9. [How to Determine Voltage, Current, and Resistance for Each Component](#how-to-determine-voltage-current-and-resistance-for-each-component)
+10. [How to Determine Voltage, Current, and Resistance for Each Component](#how-to-determine-voltage-current-and-resistance-for-each-component)
     - [Determining Voltage Needs](#determining-voltage-needs)
     - [Determining Current Needs](#determining-current-needs)
     - [Determining Resistance](#determining-resistance)
-10. [Picking a Battery](#picking-a-battery)
-11. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
+11. [Picking a Battery](#picking-a-battery)
+12. [Phase 3: Implementing New Features](#phase-3-implementing-new-features)
     - [My Robot Example](#my-robot-example)
-12. [Conclusion](#conclusion)
+13. [Conclusion](#conclusion)
 
 ---
 
 ### Backlog
-I think I'm caught up!
+- Better wheels and tires for traction.
 
 If you have any suggestions, feedback, or questions, feel free to connect on [LinkedIn](https://www.linkedin.com/in/gurjinder-toor/) and message me!
 
@@ -55,6 +56,16 @@ If you have any suggestions, feedback, or questions, feel free to connect on [Li
 ## Project Overview
 
 The project is broken into phases, starting with the basics and gradually advancing as you explore and research. In Phase 1, you'll assemble a functional robot. Then, through research and experimentation in Phase 2, you'll decide how to enhance it with new features and components implemented in Phase 3!
+
+---
+
+### Embracing the Challenge of Robotics
+
+Building robots can be a rewarding but often frustrating experience. It’s normal to encounter obstacles, make mistakes, and get stuck—this is all part of the learning process. My goal with this project is to provide about **70%** of what you need to build your robot, giving you the essential tools, guidance, and components to get started. 
+
+The remaining **30%** is left for you to explore, experiment, and problem-solve on your own. By facing challenges and figuring out solutions, you’ll gain a deeper understanding of how everything works, develop critical thinking skills, and build confidence in your ability to troubleshoot and create. Robotics is as much about learning to solve problems as it is about putting parts together, so embrace the process, and don’t be afraid to make mistakes!
+
+---
 
 ## What You Will Learn:
 1. How to assemble components into a working system.
@@ -66,6 +77,15 @@ The project is broken into phases, starting with the basics and gradually advanc
 7. Basic CAD design skills.
 
 ---
+
+### What Is Not Covered or Provided:
+1. **Transitioning to Battery Power**: Instructions on how to move from a wired USB connection to a battery-powered setup are not included. This is an area for you to explore and research.
+2. **Wiring Diagram**: A detailed wiring diagram showing how to connect the L298 motor driver to the yellow TT motors is not provided.
+3. **Connecting the Motor Driver to the Arduino Uno**: Guidance on wiring the motor driver to the Arduino Uno is not included, allowing you the opportunity to figure out this connection.
+
+---
+
+This version maintains a consistent tone and structure with the rest of the document. Let me know if further adjustments are needed!
 
 ## Phase 1: Components and Assembly Guide
 
@@ -210,6 +230,12 @@ Now you'll be at the home screen. This is where you can create a new project, op
 9. Connect the motors to the motor driver.
 10. Connect the motor driver to the Arduino Uno.
 11. Assemble the two chassis bodies using the 60mm connectors.
+
+*(Note: You will also only need ONE caster whee at the start, as you add weight you'l use the second caster wheel.)*
+
+*(Remember: You will need to research how to connect the motor driver to the motors and the motor driver to the Arduino Uno).*
+
+*(Additional note: Red is typically used for Power while Black is used for Ground (GND) when it comes to wires - it's a good practice to follow this when connecting components)*
 
 ---
 
@@ -510,7 +536,7 @@ For extra parts like mounts and holders, you can check [Open Robotics Platform](
 
 ---
 
-Some custom components I've made include:
+Some custom 3D printed components I've made include:
 - Battery holder
 - SD card holder
 - Modified caster wheel design
