@@ -47,7 +47,7 @@ Many of the parts used in this project are compiled from [Open Robotic Platform]
 ---
 
 ### Backlog
-- Better wheels and tires for traction.
+- Adjust to have drop down toggle/go to the top button
 
 If you have any suggestions, feedback, or questions, feel free to connect on [LinkedIn](https://www.linkedin.com/in/gurjinder-toor/) and message me!
 
@@ -101,8 +101,11 @@ For Phase 1, this repository contains the files and instructions you'll need to 
 - 1 x L298 motor driver holder
 - 1 x TT motor holder (left)
 - 1 x TT motor holder (right)
-- 2 x Wheels
+- 2 x Rims
+- 2 x Tires (requires TPU filament)
 - 2 x Caster wheels
+
+*The 3D printed components can be printed in PLA or PETG EXCEPT the tires, you need to use TPU filament for these otherwise there won't be enough traction when the robotic car moves.*
 
 *(Note: These parts have not been sliced yet. You will need to slice them yourself using your preferred slicing program. Additionally, you should not slice these files blindly—reorienting the TT motor holders, wheels, and caster wheels may be required for optimal printing.)*
 
@@ -113,9 +116,10 @@ For Phase 1, this repository contains the files and instructions you'll need to 
 - 2 x Yellow TT motors
 
 ### Miscellaneous:
-- Male-to-male jumper cables (several)
+- Male-to-male jumper cables (several - however not required until Phase 3)
 - Male-to-female jumper cables (several)
 - M3 screws and nuts (several)
+- Breadboard (not required until Phase 3)
 
 ---
 
@@ -214,6 +218,13 @@ Now you'll be at the home screen. This is where you can create a new project, op
 
 7. **From here, once ready, we'll copy it over to a microSD card to be used with the Bambu Lab A1 3D printer.**
 
+8. **Miscellaneous** You'll need to adjust the filament settings when printing in PETG or TPU, found here:
+
+![image](https://github.com/user-attachments/assets/c469ffea-33a3-46d7-991e-8b7614632c61)
+
+![image](https://github.com/user-attachments/assets/c3bd1703-a12c-444b-95a5-0cb3679413bb)
+
+
 ---
 
 ## Assembly Instructions:
@@ -229,7 +240,7 @@ Now you'll be at the home screen. This is where you can create a new project, op
 10. Connect the motor driver to the Arduino Uno.
 11. Assemble the two chassis bodies using the 60mm connectors.
 
-*(Note: You will also only need ONE caster whee at the start, as you add weight you'l use the second caster wheel.)*
+*(Note: You will also only need ONE caster wheel at the start, as you add weight you'l use the second caster wheel.)*
 
 *(Remember: You will need to research how to connect the motor driver to the motors and the motor driver to the Arduino Uno).*
 
