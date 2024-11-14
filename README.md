@@ -224,8 +224,8 @@ Now you'll be at the home screen. This is where you can create a new project, op
 
 ![image](https://github.com/user-attachments/assets/c3bd1703-a12c-444b-95a5-0cb3679413bb)
 
-
 ---
+**This section will cover assembly directions as an overview, to better understand how to connect everything read further ahead.**
 
 ## Assembly Instructions:
 1. Laser cut or 3D print the required components.
@@ -245,6 +245,167 @@ Now you'll be at the home screen. This is where you can create a new project, op
 *(Remember: You will need to research how to connect the motor driver to the motors and the motor driver to the Arduino Uno).*
 
 *(Additional note: Red is typically used for Power while Black is used for Ground (GND) when it comes to wires - it's a good practice to follow this when connecting components)*
+
+---
+
+### Understanding DC Motors, PWM, and Wiring Your Robot
+
+In this project, we’ll use **DC motors** to make our robot move. Let’s break down what DC motors are, how **PWM** (Pulse Width Modulation) works to control speed, and then look at how to wire everything up. Don’t worry, we’ll start with a simple setup and leave the more advanced control as an option you can try later.
+
+#### What is a DC Motor?
+
+A **DC motor** (short for Direct Current motor) is a small motor that runs on direct current (like the current from a battery). It converts electrical energy into motion, making it spin. This spinning motion can turn wheels or gears, making it ideal for robots.
+
+For this project, we’re using **yellow TT motors**, which are small and affordable, perfect for beginners. Here are the basics of what you need to know:
+- **Speed Control**: You can make the motor spin faster or slower by adjusting the amount of power it gets.
+- **Direction Control**: By reversing the connections (swapping positive and negative), you can make the motor spin in the opposite direction.
+
+#### What is PWM (Pulse Width Modulation)?
+
+**Pulse Width Modulation (PWM)** is a way to control how much power a motor gets, without changing the voltage. Imagine rapidly turning a light switch on and off – if you do it quickly enough, the light seems dimmer, even though it’s getting the same voltage when it’s “on.” PWM works similarly with motors:
+- **Higher “on” time** (like a light that’s mostly on) makes the motor spin faster.
+- **Lower “on” time** (like a light that’s mostly off) makes the motor spin slower.
+
+On the **L298N motor driver**, there are two pins (**ENA** and **ENB**) that can use PWM to control the motor speed. But to keep things simple, we’ll skip PWM at first and set up the motors to run at a constant speed.
+
+---
+
+### Wiring Your Motors and L298N Motor Driver
+
+There are two ways to wire the L298N motor driver to your Arduino, depending on whether you want basic or advanced control over the motor speed. We’ll start with a simple setup to get your robot moving, and then you can try the more advanced setup later if you want more control.
+
+#### Simple Setup (Constant Speed)
+
+In this setup, we’ll use the motor driver’s built-in speed control, which lets you skip the PWM wiring. This is great for beginners because it’s straightforward and gets your motors running at a constant speed.
+
+
+![l298n-motor-driver](https://github.com/user-attachments/assets/ad9dee80-8a68-45d1-bc08-297b15b5e0ba)
+
+
+1. **Power Connections**:
+   - **12V**: Connect an external power source (like a 6-12V battery) to the **12V** terminal to power the motors.
+   - **GND**: Connect the **GND** terminal on the motor driver to the **GND** pin on the Arduino to share a common ground.
+   - **5V**: Leave the **5V Enable Jumper** in place (a small black cap on the motor driver), which lets the motor driver’s 5V output power the Arduino. Connect the **5V** pin on the motor driver to the **5V** pin on the Arduino.
+
+2. **Motor Connections**:
+   - **Motor A (left motor)**: Connect one yellow TT motor to the **OUT1** and **OUT2** terminals. If the motor spins in the wrong direction, just swap the two connections.
+   - **Motor B (right motor)**: Connect the second yellow TT motor to the **OUT3** and **OUT4** terminals. You can also swap these wires to change the direction if needed.
+
+3. **Direction Control Pins**:
+   - **IN1 and IN2** (for Motor A): Connect these to any two digital pins on the Arduino (e.g., pins 2 and 3). These control whether Motor A goes forward or backward.
+   - **IN3 and IN4** (for Motor B): Connect these to another two digital pins on the Arduino (e.g., pins 4 and 5) to control the direction of Motor B.
+
+In this setup, **ENA** and **ENB** don’t need to be connected to the Arduino because the 5V Enable Jumper allows the motor driver to handle speed internally.
+
+---
+
+#### Advanced Setup (Using PWM for Speed Control)
+
+Once you’re comfortable with the basics, you can try this advanced setup. By removing the **5V Enable Jumper** and using **PWM** on the **ENA** and **ENB** pins, you’ll be able to control the speed of the motors directly from the Arduino.
+
+1. **Power Connections**:
+   - **12V**: Connect an external power source (like a 6-12V battery) to the **12V** terminal to power the motors.
+   - **GND**: Connect the **GND** terminal on the motor driver to the **GND** pin on the Arduino.
+   - **5V**: Leave this pin disconnected from the Arduino, as the 5V Enable Jumper is removed.
+
+2. **Speed Control Pins (ENA and ENB)**:
+   - **ENA**: Connect **ENA** to a PWM-capable pin on the Arduino (e.g., pin 9) to control the speed of Motor A.
+   - **ENB**: Connect **ENB** to another PWM-capable pin on the Arduino (e.g., pin 10) to control the speed of Motor B.
+   - You can use `analogWrite()` on these pins to adjust the motor speed.
+
+3. **Motor Connections**:
+   - **Motor A (left motor)**: Connect it to **OUT1** and **OUT2**.
+   - **Motor B (right motor)**: Connect it to **OUT3** and **OUT4**.
+
+4. **Direction Control Pins**:
+   - **IN1 and IN2** (for Motor A): Connect these to two digital pins on the Arduino (e.g., pins 2 and 3).
+   - **IN3 and IN4** (for Motor B): Connect these to another two digital pins on the Arduino (e.g., pins 4 and 5).
+
+With this setup, **ENA** and **ENB** allow you to control the motor speed directly from the Arduino using PWM.
+
+---
+
+### Getting Started: Simple Method First
+
+For now, we’ll start with the **simple setup** using the 5V Enable Jumper. This setup will allow you to control the direction of the motors and run them at a constant speed. Once you feel comfortable, you can experiment with the **advanced setup** by removing the 5V Enable Jumper and using **ENA** and **ENB** to adjust the speed through PWM.
+
+This approach lets you start with the basics and gradually learn more advanced controls as you gain confidence.
+
+--- 
+
+![Uno](https://github.com/user-attachments/assets/5ce50f1f-2469-499e-9cd2-b20f2b4bce2e)
+
+### Tutorial: Understanding the Arduino Uno and Its Pins
+
+The Arduino Uno is a popular microcontroller board based on the ATmega328P microcontroller. It's beginner-friendly and highly versatile, making it ideal for robotics, automation, and IoT projects. Let's break down its components and pin functionalities to understand how it all comes together.
+
+---
+
+#### Key Components and Pin Breakdown
+
+1. **USB Connector**: 
+   - This port is used to connect the Arduino to a computer for programming and powering the board through USB.
+   
+2. **Power Port**: 
+   - Connect an external power source (7-12V) here if you’re not using USB power. This port supplies the main power for the Arduino.
+
+3. **Voltage Regulator**:
+   - This component regulates voltage to prevent excess power from damaging the board. It manages the power from the external source or USB.
+
+4. **Reset Switch**:
+   - Pressing this button resets the Arduino, restarting any program currently running on the board.
+
+5. **Microcontroller**:
+   - The ATmega328P is the heart of the Arduino Uno, handling all processing and I/O operations. This microcontroller executes the code you upload.
+
+6. **TX RX LEDs**:
+   - These LEDs indicate data transmission (TX) and reception (RX) activity between the Arduino and connected devices or your computer.
+
+---
+
+#### Types of Pins on the Arduino Uno
+
+1. **Digital Pins (0-13)**:
+   - These pins can act as either input or output, depending on the program. They handle digital signals, which means they can be either HIGH (5V) or LOW (0V).
+   - Some pins also have special functions:
+     - **PWM Pins**: Pins with a `~` symbol (e.g., 3, 5, 6, 9, 10, 11) support Pulse Width Modulation (PWM), allowing them to output analog-like signals for dimming LEDs or controlling motor speed.
+
+2. **Analog Input Pins (A0-A5)**:
+   - These pins read analog input signals, such as data from sensors (e.g., temperature or light sensors) that output a variable voltage. 
+   - The analog pins return values between 0 and 1023, representing a range from 0V to 5V.
+   
+3. **Power Pins**:
+   - **5V**: Provides a stable 5V power output, typically used to power sensors and modules.
+   - **3.3V**: Supplies 3.3V power for components that require lower voltage.
+   - **GND (Ground)**: Connect any circuit’s ground line to these pins to complete the circuit.
+   - **VIN**: Input voltage to the Arduino board when an external power source is connected (7-12V).
+
+---
+
+#### Putting It All Together: Connecting the Arduino Uno to Components
+
+To illustrate how the Arduino Uno works in a project, let’s go over connecting it to the L298N motor driver to control two motors.
+
+1. **Powering the L298N**:
+   - **5V Pin**: Connect the Arduino’s **5V** pin to the **5V** input on the L298N if your motors operate at low voltage (otherwise, power the L298N with an external source).
+   - **GND**: Connect one of the Arduino’s **GND** pins to the **Ground** on the L298N to complete the circuit.
+
+2. **Controlling the Motors**:
+   - **Digital Pins for Direction Control**: Connect digital pins **D7** and **D8** from the Arduino to **IN1** and **IN2** on the L298N to control Motor A. Similarly, connect **D5** and **D6** to **IN3** and **IN4** to control Motor B.
+   - **PWM Pins for Speed Control**: Connect PWM-capable pins **D9** and **D10** to **ENA** and **ENB** on the L298N to control the speed of Motor A and Motor B, respectively.
+
+3. **Programming the Arduino**:
+   - With the motor driver connected, upload code to the Arduino using the USB connection. You can control motor speed and direction by setting the digital and PWM pins in your program.
+
+---
+
+#### Summary
+
+The Arduino Uno’s versatility lies in its range of pins and simple layout, allowing easy control of components like the L298N motor driver. By understanding the purpose of each pin and how to power the board, you can create complex projects involving motors, sensors, and other devices.
+
+Let me know if you’d like further assistance or clarification on any part of this setup!
+
+
 
 ---
 
