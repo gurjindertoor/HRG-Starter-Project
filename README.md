@@ -403,10 +403,6 @@ To illustrate how the Arduino Uno works in a project, let’s go over connecting
 
 The Arduino Uno’s versatility lies in its range of pins and simple layout, allowing easy control of components like the L298N motor driver. By understanding the purpose of each pin and how to power the board, you can create complex projects involving motors, sensors, and other devices.
 
-Let me know if you’d like further assistance or clarification on any part of this setup!
-
-
-
 ---
 
 ## Next Steps
