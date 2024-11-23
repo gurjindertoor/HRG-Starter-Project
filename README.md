@@ -228,21 +228,78 @@ Now you'll be at the home screen. This is where you can create a new project, op
 **This section will cover assembly directions as an overview, to better understand how to connect everything read further ahead.**
 
 ## Assembly Instructions:
-1. Laser cut or 3D print the required components.
-2. Attach the yellow TT motors to the motor holders.
-3. Mount the motor holders onto the chassis with motor cutouts.
-4. Attach the wheels to the motors.
-5. Install the caster wheels.
-6. Install the L298 motor driver holder and secure the motor driver.
-7. Attach the Arduino Uno holder to the other chassis body (without motor cutouts).
-8. Secure the Arduino Uno to its holder.
-9. Connect the motors to the motor driver.
-10. Connect the motor driver to the Arduino Uno.
-11. Assemble the two chassis bodies using the 60mm connectors.
 
-*(Note: You will also only need ONE caster wheel at the start, as you add weight you'l use the second caster wheel.)*
+Assembly requires various Allen Wrenches. 
 
-*(Remember: You will need to research how to connect the motor driver to the motors and the motor driver to the Arduino Uno).*
+1. Attach the TPU filament tires to the rims.
+2. Connect the motor driver holder to one end of the chassis with tire cutouts but make sure to reference the picture below because you’ll also be using one of the holes to connect one of the caster wheels.
+3. Mount the motor holders onto the chassis with the tire cutouts.
+4. Attach the yellow TT motors into the motor holders (make sure to reference pictures below for correct orientation).
+5. Connect the wheels to the motors.
+6. Attach the L298N motor driver to the motor driver holder.
+7. Mount the Arduino Uno holder to one of the other chassis plates.
+8. Attach the Arduino Uno to the holder. 
+9. Connect four of the connectors to the chassis plate with the tire cutouts but DO NOT connect the two plates because you’ll be working on wiring everything together. (You’ll learn how to below)!
+
+### Step 1:
+
+Connect the rims and tires with 4 of the M3 6mm bolts. They'll fit snuggly as you tighten them with the appropriate Allen Wrench. (No nuts required).
+
+![rims_and_tires](https://github.com/user-attachments/assets/6d6b9525-13fd-478d-85cd-d45f38259161)
+
+### Step 2:
+
+You'll need to use 1 M3 14mm bolt to connect one of the caster wheels and the motor driver holder together and you'll use 1 M3 12mm bolt for the other end of the motor driver holder. (2 nuts are also required). 
+
+![topside_motor_driver_caster_wheel](https://github.com/user-attachments/assets/39190dc4-4aa9-43ed-a750-ff1b68856e5b)
+
+
+![backside_motor_driver_caster_wheel](https://github.com/user-attachments/assets/94b3e9b6-aa40-4d41-b62a-e3f37a720019)
+
+### Step 3:
+
+You'll use 1 M3 12mm bolt with 1 of the nuts for the other caster wheel. 
+
+![topside_caster_wheel](https://github.com/user-attachments/assets/346ca31d-5d16-4f20-b5b3-5a6aefea5b7b)
+
+![backside_caster_wheel](https://github.com/user-attachments/assets/19253d30-ca35-4798-ab6d-c65314490830)
+
+### Step 4:
+
+You'll use 2 M3 12mm bolts with 2 nuts to connect the motor holder (pay attention to the orientation and position).
+
+![topside_motor_holder](https://github.com/user-attachments/assets/c7e61dbf-1c1c-4bb9-a950-f55d76fbffd1)
+
+### Step 5:
+
+You'll use 2 M3 25mm bolts with 2 nuts to connect the yellow TT motor.
+
+![inner_motor](https://github.com/user-attachments/assets/ff65d3e9-9446-4ba5-a8fa-82365c7d9952)
+
+![outer_motor](https://github.com/user-attachments/assets/fce5d78c-9deb-4b1c-a147-0f13f103dbaa)
+
+### Step 6:
+
+Next you'll attach the wheel to the motor and then connect them with 1 M2 8mm bolt. (No nuts required).
+
+![rim_tire_connected](https://github.com/user-attachments/assets/6fff9735-3632-4372-af5b-60f6cc83f71d)
+
+Here's a birds eye view of what it'll look like at the end:
+
+![birds_eye_motor](https://github.com/user-attachments/assets/17ac0b17-ab21-4bb8-b576-8913df643b12)
+
+### Arduino Uno Holder Example:
+
+Here's an example of an Arduino Uno holder attached. The orientation is up to you, but you'll use 2 M3 12mm bolts and nuts to attach to the chassis plate.
+
+![arduino_holder](https://github.com/user-attachments/assets/492ba93e-8c5d-40c1-8566-88b62fdb137c)
+
+### Connectors:
+
+[Image coming soon]
+
+
+*(You will learn how to wire everything below)!*
 
 *(Additional note: Red is typically used for Power while Black is used for Ground (GND) when it comes to wires - it's a good practice to follow this when connecting components)*
 
